@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <link href="./output.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body class="bg-[#e6efff] text-white">
+  <div class="bg-[#fdfdfc] text-black w-[95%] sm:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[50%] mx-auto mt-[100px] md:mt-[150px] lg:mt-[200px]">
+
+    <div class="bg-[#fdfdfc] text-black flex flex-col md:flex-row justify-center">
+      
+      <div class="w-full md:w-1/2 bg-white flex justify-center items-center p-4">
+        <img class="w-[80%] md:w-auto" src="currency.png" alt="Currency" />
+      </div>
+
+      <div class="w-full md:w-1/2 text-black px-4">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl text-center font-bold my-6">Currency Converter</h1>
+
+        <form class="text-black space-y-4">
+          <div>
+            <label class="text-xl sm:text-2xl" for="Amount">Amount</label><br />
+            <input class="bg-[#e5e7ed] w-full rounded h-[40px]" type="text" id="amount" />
+          </div>
+
+          <div>
+            <label class="text-xl sm:text-2xl" for="From">From Currency</label><br />
+            <select class="bg-[#e5e7ed] w-full rounded h-[40px]" name="From" id="From">
+              <option value="">---Select---</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="text-xl sm:text-2xl" for="To">To Currency</label><br />
+            <select class="bg-[#e5e7ed] w-full rounded h-[40px]" name="To" id="To">
+              <option value="">---Select---</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="mx-auto px-4 mt-6">
+      <label class="text-xl sm:text-2xl ml-1 sm:ml-2" for="convertedAmount">Converted Amount</label>
+      <div class="bg-[#e5e7ed] w-full rounded h-[60px] mx-auto text-black text-lg p-2 mt-2" id="div"></div>
+
+      <button class="bg-[#8cb0e6] w-full rounded h-[40px] mt-4 text-white font-semibold" type="submit" id="submit">Submit</button>
+    </div>
+
+    <div class="text-black bg-white h-auto text-center py-2 text-sm sm:text-base mt-4">
+      Special Thanks to Frankfurter API team for providing the real-time exchange rates
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
